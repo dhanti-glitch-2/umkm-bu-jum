@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Website UMKM</title>
+<meta name="description" content="Website UMKM" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span id="nav-name" class="nav-name"></span>
+    <a id="nav-wa" class="btn-ghost" target="_blank" rel="noopener">Hubungi via WA</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="hero-section">
+    <div class="hero-text">
+      <p class="eyebrow">Produk Asli Desa</p>
+      <h1 id="hero-title"></h1>
+      <p id="hero-tagline" class="hero-tagline"></p>
+      <a id="hero-wa" class="stamp-btn" target="_blank" rel="noopener">
+        <span>Pesan<br/>Sekarang</span>
+      </a>
+    </div>
+    <div class="hero-image-wrap">
+      <img id="hero-image" alt="" />
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="about" id="about-section">
+    <div class="about-image-wrap">
+      <img id="about-image" alt="" />
+    </div>
+    <div class="about-text">
+      <p class="eyebrow">Tentang Kami</p>
+      <p id="about-text"></p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="products" id="products-section">
+    <p class="eyebrow center">Produk</p>
+    <h2 class="section-title center">Yang Kami Jual</h2>
+    <div id="products-grid" class="products-grid"></div>
+  </section>
+
+  <section class="testimonials" id="testimonials-section" style="display:none;">
+    <p class="eyebrow center">Kata Mereka</p>
+    <div id="testimonials-list" class="testimonials-list"></div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="contact" id="contact-section">
+    <div class="contact-info">
+      <p class="eyebrow">Lokasi &amp; Kontak</p>
+      <h2 class="section-title">Datang atau Hubungi Kami</h2>
+      <p class="contact-line"><span class="label">Alamat</span><span id="contact-address"></span></p>
+      <p class="contact-line"><span class="label">Jam Buka</span><span id="contact-hours"></span></p>
+      <a id="contact-wa" class="btn-solid" target="_blank" rel="noopener">Chat WhatsApp</a>
+    </div>
+    <div class="contact-map" id="contact-map"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p id="footer-text"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
