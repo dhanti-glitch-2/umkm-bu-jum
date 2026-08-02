@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Detail UMKM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="back-link">&larr; Kembali ke Daftar UMKM</a>
+    <a id="nav-wa" class="btn-ghost" target="_blank" rel="noopener">Hubungi via WA</a>
+  </div>
+</header>
+
+<main id="detail-root">
+
+  <section class="hero detail-hero" id="hero-section">
+    <div class="hero-text">
+      <div class="detail-logo-wrap">
+        <img id="umkm-logo" alt="" />
+      </div>
+      <p class="eyebrow" id="umkm-category"></p>
+      <h1 id="umkm-name"></h1>
+      <a id="hero-wa" class="stamp-btn" target="_blank" rel="noopener">
+        <span>Pesan<br/>Sekarang</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="about" id="about-section">
+    <div>
+      <p class="eyebrow">Sejarah</p>
+      <p id="umkm-story"></p>
+    </div>
+    <div>
+      <p class="eyebrow">Keunggulan</p>
+      <p id="umkm-vision"></p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="products" id="products-section">
+    <p class="eyebrow center">Produk</p>
+    <h2 class="section-title center">Produk yang Dijual</h2>
+    <div id="products-grid" class="products-grid"></div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="ordering" id="ordering-section">
+    <p class="eyebrow">Cara Pemesanan</p>
+    <h2 class="section-title">Cara Pesan</h2>
+    <ul id="order-methods" class="order-list"></ul>
+    <a id="order-wa" class="btn-solid" target="_blank" rel="noopener">Chat WhatsApp</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="contact" id="contact-section">
+    <div class="contact-info">
+      <p class="eyebrow">Lokasi &amp; Kontak</p>
+      <h2 class="section-title">Datang atau Hubungi Kami</h2>
+      <p class="contact-line"><span class="label">Alamat</span><span id="contact-address"></span></p>
+      <p class="contact-line"><span class="label">Jam Buka</span><span id="contact-hours"></span></p>
+      <p class="contact-line" id="delivery-line"><span class="label">Area Kirim</span><span id="contact-delivery"></span></p>
+      <div id="social-links" class="social-links"></div>
+    </div>
+    <div class="contact-map" id="contact-map"></div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="testimonials" id="testimonials-section" style="display:none;">
+    <p class="eyebrow center">Kata Mereka</p>
+    <div id="testimonials-list" class="testimonials-list"></div>
+  </section>
+
+  <section class="certifications" id="certifications-section" style="display:none;">
+    <p class="eyebrow center">Sertifikasi &amp; Izin</p>
+    <div id="certifications-list" class="cert-list"></div>
+  </section>
+
+</main>
+
+<div id="not-found" class="not-found" style="display:none;">
+  <p>UMKM tidak ditemukan.</p>
+  <a href="index.html" class="btn-solid">Kembali ke Daftar UMKM</a>
+</div>
+
+<footer class="footer">
+  <p id="footer-text"></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script-detail.js"></script>
+</body>
+</html>
